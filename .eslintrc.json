@@ -1,0 +1,26 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"extends": [
+		"react-app",
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"overrides": [
+		{
+			"files": ["./src/**/*.ts?(x)"]
+		}
+	],
+	"rules": {
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"@typescript-eslint/ban-types": "off"
+	}
+}
